@@ -1,0 +1,42 @@
+Mobile  - <input type="button" value="Add to Cart" onclick="add('Mobile')">
+
+Laptop  - <input type="button" value="Add to Cart" onclick="add('Laptop')">
+Tablet  - <input type="button" value="Add to Cart" onclick="add('Tablet')"><br>
+<img src="images/pizza.jpg"> - <input type="button" value="Add to Cart" onclick="add('LED') ">
+
+<div style="background-color: blanchedalmond; width:200px;height:150px;padding:20px;
+float:right;" id="cart">
+
+Total Item - <b id="c"></b><!--Item Counter-->
+<ol id="hello"></ol>   <!--item detail here-->
+</div>
+
+<script>
+
+    //adding script
+    var x = 0;
+    document.getElementById("c").innerText=x;
+    function add(val){
+
+     document.getElementById("hello").innerHTML +="<li>"+val+"<input type='button' value='X' onclick='remove()'></li>";
+     x=x+1;
+     document.getElementById("c").innerText=x;
+
+    }
+
+    //removin  g script
+function remove(){
+
+
+    var listItem = document.getElementsByTagName("li");
+    for(var i = 0; i<listItem.length;i++){
+
+        listItem[i].onclick=function(){
+           this.parentNode.removeChild(this); 
+        }
+    }
+
+    x = x-1;
+    document.getElementById("c").innerText=x;
+}
+</script>

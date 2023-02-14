@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <title>Login Page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="file:///E./font-awesome/css/all.css">
+
+    <style>
+        .button {
+            background-color: #4CAF50;
+            /* Green */
+            border: none;
+            color: white;
+            padding: 16px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+        }
+
+        .button1 {
+            background-color: yellowgreen;
+            color: black;
+            border: 2px solid grey;
+            border-radius: 50%;
+
+        }
+
+        .button1:hover {
+            background-color: #4CAF50;
+            color: black;
+            box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+        }
+    </style>
+</head>
+
+
+<div class="container-fluid ">
+    <div
+        style="background-image:url(images/hotel.jpg); background-size:cover; background-position: center; background-repeat: no-repeat;height: 745px;">
+        <div class="container ">
+           
+            <div class="row">
+                <div class="card"
+                    style="height: 460px; top: 200px; width: 400px;left: 400px;border-radius: 20px; background: black;border: 2px solid grey;">
+                    <img src="images/yu.jpg" style=" border-radius:50%;height: 50px;width:50px;margin-left: 170px;">
+                    <div class="card-body text-light" style="text-align: center; margin-top: 10px;"><strong
+                            style="color:grey;">
+                            <h2>Turnip The Beat</h2>
+                        </strong><br>
+
+
+                        <form class="d-flex">
+                            <fieldset style="text-align: left;">
+                                <strong>
+                                    <h4 style="text-align: center;color: grey;">LOGIN</h4>
+                                </strong>
+
+
+
+                                <input class="form-control me-2" type="Enter Mobile No." placeholder="Enter Username"
+                                    aria-label="Enter Username">
+                                <fieldset style="text-align: left;">
+                                   <br><br> 
+                                   
+                                   <div class="lock">
+                                    <div class="fa fa-lock">                    
+                                    </div>
+                                    <input class="form-control me-2"type="password" placeholder="ENter Password" placeholder="Enter Password" aria-label="Enter Password">
+                                     <span class="Show-hide">
+                                        <i class="fa fa-eye"></i>
+                                     </span>
+                                </div><br>
+
+                                    <!--<input class="form-control me-2" type="Enter Password" placeholder="Enter Password"
+                                        aria-label="Enter Password">
+                               <br>-->
+                                
+
+
+
+
+
+
+                                    <!--<button type="button-active " value="Login" class="btn btn-danger"
+                                        style="border-radius: 25px; width: 350px;" ><a href="" style="font-size:20px; 
+                                    color: white; text-decoration: none ">Login</a>
+                                    </button><br><br>-->
+
+                                    <button class="button button1" style="border-radius: 25px; width: 350px; "><a
+                                            href="second page.html">Login
+                                        </button>
+                                    <br>
+                                    
+                                      
+                                    <a href="forgetpage0.html" title="Change Password" style="margin-top: 15px;">Forget
+                                        Password</a>-
+
+                                    <a href="register page2.html" title="Change Password" style="margin-left: 95px; margin-top:15px;">Register
+                                        Password</a>
+
+                                      
+                        </form>
+                        <php?
+                        $con=mysqli_connect('loacalhost','root','','record')
+                        if(isset($_post['submit']))
+                        {
+                           $username=$_post[username];
+                           $Password=$_post[Password];
+                           $query="insert imto login(username,Password) VALUES ('$username','$Password');
+                           $run=mysqli_query($con,$query);
+
+                        }
+                        
+                        
+
+                
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</html>

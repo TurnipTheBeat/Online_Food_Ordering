@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[49],{OZsM:function(o,n,t){"use strict";var i=t("yXPU"),p=t.n(i),r=t("iKgg"),s=Object(r.a)("import");n.a={importForm:(o,n)=>p()((function*(){if("function"!=typeof n)return yield s.post("form",o);s.post("form",o,n)}))()}}}]);

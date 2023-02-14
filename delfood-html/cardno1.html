@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - CheckOut Page</title>
+  <link rel="stylesheet" href="./cardno2.css">
+  <link rel="stylesheet" href="popup.css">
+  <script defer src="popup.js"></script>
+  
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="mainscreen">
+    <!-- <img src="https://image.freepik.com/free-vector/purple-background-with-neon-frame_52683-34124.jpg"  class="bgimg " alt="">--> 
+      <div class="card">
+        <div class="leftside">
+          <img
+            src="images/food of food.jpg"
+            class="product"
+            alt="Food"
+          />
+        </div>
+        <div class="rightside">
+          <form action="">
+            <h1>CheckOut</h1>
+            <h2>Payment Information</h2>
+            <p>Cardholder Name</p>
+            <input type="text" class="inputbox" name="name" required />
+            <p>Card Number</p>
+            <input type="number" class="inputbox" name="card_number" id="card_number" placeholder="Enter Number" required />
+
+            <p>Conform Card Number</p>
+            <input type="number" class="inputbox" name="card_number" id="card_number" class="Show-hide" placeholder="Re-Enter Number" required />
+            
+
+
+
+            
+            <!--<select class="inputbox" name="card_type" id="card_type" required>
+              <option value="">--Select a Card Type--</option>
+              <option value="Visa">Visa</option>
+              <option value="RuPay">RuPay</option>
+              <option value="MasterCard">MasterCard</option>
+              <option value="MasterCard">Credit-Card</option>
+            </select>-->
+<div class="expcvv">
+
+            <p class="expcvv_text">Expiry</p>
+            <input type="date" class="inputbox" name="exp_date" id="exp_date" required />
+
+            <p class="expcvv_text2">CVV</p>
+            <input type="password" class="inputbox" name="cvv" id="cvv" required />
+        </div>
+            <p></p>
+            <!--<button type="submit" class="button"><a href="popup2.html" style="color: black; text-decoration: none;">CheckOut</a></button>-->
+
+            
+                <button type="submit" class="button" onclick="openPopup()" >CheckOut</button>
+                <div class="popup" id="popup">
+                    <img src="images/tick1.jpg" alt="">
+                    <h2>Thank You!</h2>
+                    <p>Your Details has been Successfully Saved. Thanks!</p>
+                    <button type="button" onclick="closePopup()"><a href="credit1.html" style="color: black; text-decoration: none;">OK</a></button>
+                </div>
+            
+
+
+
+
+
+          </form>
+        </div>
+      </div>
+    </div>
+<!-- partial -->
+  
+</body>
+</html>
